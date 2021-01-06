@@ -1,0 +1,132 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+  padding: 10px 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  @media (max-width: 768px) {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.nav {
+  &__toggle {
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+
+    svg {
+      stroke: var(--dark);
+      width: 100%;
+      stroke-width: 2px;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+
+    &__isOpen {
+      background: #ff0080;
+      svg {
+        stroke: var(--light);
+      }
+    }
+  }
+  &__container {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__branding {
+    width: 100px;
+    padding: 5px;
+    > a {
+      display: block;
+      .logo {
+        width: auto;
+        height: 30px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 100px;
+    }
+  }
+
+  &__body {
+    width: 100%;
+
+    @media (max-width: 768px) {
+      transition: all ease-in-out 0.1s;
+      overflow: hidden;
+      width: 0;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      top: 50px;
+      background: #eee;
+      z-index: 2;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__body__isToggled {
+      width: 70%;
+    }
+  }
+
+  &__menu {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+    .nav__item {
+      color: #666;
+      text-align: center;
+      white-space: nowrap;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 4px 15px;
+      display: inline-block;
+
+      &-featured {
+        color: var(--pink);
+      }
+
+      @media (max-width: 768px) {
+        display: block;
+        padding: 1rem;
+        font-size: 1rem;
+      }
+
+      &:hover {
+        color: #353535;
+      }
+
+      &.active {
+        color: #000000;
+      }
+    }
+  }
+}

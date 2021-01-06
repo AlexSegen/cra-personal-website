@@ -1,0 +1,28 @@
+.sk {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax(120px, 1fr));
+        grid-gap: 10px;
+    }
+
+    &__item {
+        padding: 10px;
+        text-align: center;
+        background: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 25px;
+
+        &_name {
+            display: block;
+            padding: 2px;
+            font-weight: normal;
+        }
+        &_icon {
+            display: block;
+            max-width: 40px;
+            height: auto;
+            margin: 0 auto 5px;
+        }
+    }
+}
+
+
