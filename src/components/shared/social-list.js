@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ConfigContext } from '../Layout';
+import { ConfigContext } from '../../contexts/ConfigContext';
 import styles from './social-list.module.scss';
 
 const SocialItem = ({ url, label, icon }) => {

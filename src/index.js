@@ -4,11 +4,14 @@ import Routes from './routes';
 import * as serviceWorker from './serviceWorker';
 
 import { HelmetProvider } from 'react-helmet-async';
+import ConfigContextProvider from './contexts/ConfigContext';
 
 ReactDOM.render(
   <React.StrictMode>
     <HelmetProvider>
-      <Routes />
+      <ConfigContextProvider>
+        <Routes />
+      </ConfigContextProvider>
     </HelmetProvider>
   </React.StrictMode>,
   document.getElementById('root')
