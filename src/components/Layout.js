@@ -5,6 +5,7 @@ import Header from "./shared/header";
 import Footer from "./shared/footer";
 import { ConfigContext } from "../contexts/ConfigContext";
 
+import 'simple-line-icons/css/simple-line-icons.css';
 import "../assets/scss/main.scss";
 import styles from "./layout.module.scss";
 

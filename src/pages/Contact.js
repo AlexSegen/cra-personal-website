@@ -36,7 +36,7 @@ const ContactPage = () => {
 
                               <ul className=" wow fadeInUp">
                                     <li className="mb-2">
-                                      <a href={context.twitter} target="_blank" rel="noopener noreferrer">}
+                                      <a href={context.twitter} target="_blank" rel="noopener noreferrer">
                                         <img src="/img/social/twitter-dark.png" alt="Twitter" style={iconStyles} /> Pixelagil
                                       </a>
                                     </li>
