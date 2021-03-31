@@ -6,7 +6,7 @@ export const validateMessage = message => {
         name: Joi.string().min(3).max(50).required(),
         subject: Joi.string().min(3).max(50).required(),
         email: Joi.string()
-        .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } }),
+        .email({ minDomainSegments: 2, tlds: { } }),
         content: Joi.string().min(3).max(300).required()
     });
 

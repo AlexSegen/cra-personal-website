@@ -35,7 +35,7 @@ const About = () => {
                                     <h4>Hola,</h4>
                                     <p>Soy Desarrollador Frontend / Diseñador Web desde hace más de 6 años, enfocado en usabilidad, semántica y buenas prácticas de desarrollo. He trabajando como Freelance y también con pequeñas y grandes compañías.</p>
 
-                                    <p>Tengo experiencia usando <strong>Javascript, HTML, CSS / SCSS, VueJS, Angular y algo de React</strong>.</p>
+                                    <p>Tengo experiencia usando <strong>Javascript, HTML, CSS / SCSS</strong>, y mis tecnologías favoritas de desarrollo frontend son <strong>VueJS, Angular y React</strong>.</p>
 
                                     <p>Me considero una persona con mucha disposición de aprender nuevas tecnologías.</p>
                                 </div>
